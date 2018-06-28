@@ -12,7 +12,7 @@ router.get('/', async (ctx, next) => {
 router.get('/userData', async (ctx, next) => {
     await userModel.findUser()
         .then(result => {
-            console.log(result.length);
+            //console.log(result.length);
             if (result.length) {
                 ctx.body = {
                     data: 0,
